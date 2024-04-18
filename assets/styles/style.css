@@ -8,7 +8,7 @@ body {
 
 .main-section {
     background: rgb(255, 255, 255);
-    height: calc(var(6.67px, 1vh)* 100);
+    min-height: 100vh;
 }
 
 .signin-section {
@@ -606,12 +606,99 @@ body {
     background: rgb(232, 232, 232);
 }
 
+
+
+.footer{
+    padding: 24px 0px;
+    border-top: 1px solid rgb(228, 228, 228);
+}
+
+.footer-list{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-list li{
+    position: relative;
+    transition: .3s;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.footer-list li:hover{
+    color: rgb(46, 46, 46);
+}
+
+/* bootom-section */
+
+.bootom-section{
+        padding: 16px 0px;
+        position: fixed;
+        background-color: rgba(249, 249, 249, 0.9);
+        transition: bottom 0.3s ease-out 0s;
+        backdrop-filter: blur(6px);
+        border-top: 1px solid rgb(228, 228, 228);
+        z-index: 100;
+        bottom: 0;
+        width: 100%;
+}
+
+.hSaGAU {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+.jIRBq {
+    margin: 0px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: rgb(171, 171, 171);
+}
+
+
+.bIiGvx {
+    margin: 0px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: rgb(88, 88, 88);
+}
+
+.gPxmeg {
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    appearance: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    font-family: "Sharp Sans", sans-serif;
+    padding: 15px 24px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    transition: border-color 0.1s ease-out 0s, background-color 0.1s ease-out 0s, color 0.1s ease-out 0s, box-shadow 0.2s ease-out 0s, fill 0.1s ease-out 0s;
+    background: rgb(46, 46, 46);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px, rgba(0, 0, 0, 0.06) 0px 1px 2px;
+    color: rgb(255, 255, 255);
+}
+.buton-hidden2{
+    display: none;
+}
+
 @media (min-width: 400px) {
     .kykMDA {
         flex: 1 1 0%;
     }
 }
-@media (min-width: 776px) {
+@media (min-width: 769px) {
     .fuBCIn {
         font-size: 24px;
         line-height: 32px;
@@ -628,28 +715,49 @@ body {
     .NfmzU {
         padding: 32px;
     }
-     
+    .bLvYMA {
+      
+        padding-left: 20%;
+        padding-right: 20%;
+    
+    }
+    .footer-list li {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .bootom-section{
+        padding: 24px 0px;
+        background-color: rgb(255, 255, 255);
+        backdrop-filter: blur(0px);
+    }
+    .hSaGAU {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .jIRBq {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    h2 {
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: 0.02em;
+    }
 }
 .kykMDA {
     gap: 8px;
 }
 
 @media(max-width:1024px) {
-    .hidden {
-        display: none;
-    }
-    .row{
-        gap: 20px;
-    }
     .bLvYMA {
-        width: 100%;
-        flex-shrink: 0;
-        padding: 20px;
-        -webkit-box-pack: center;
-        justify-content: center;
+        height: calc(100vh - 81px);
+
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
+    
+ 
 }
 
 @media(max-width:776px) {
@@ -662,5 +770,33 @@ body {
     .limited-section{
         max-width: 100%;
         width: 100%;
+    }
+    .hidden {
+        display: none;
+    }
+    .buton-hidden{
+        display: none;
+    }
+.buton-hidden2{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+}
+@media(max-width:550px){
+    .row{
+        gap: 20px;
+    }
+    .bLvYMA {
+        width: 100%;
+        flex-shrink: 0;
+        padding: 20px;
+        -webkit-box-pack: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
 }
