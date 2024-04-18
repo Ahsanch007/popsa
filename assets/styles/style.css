@@ -697,6 +697,15 @@ body {
     display: none;
 }
 
+.scrol{
+    overflow: hidden;
+    overflow-x: scroll;
+}
+   /* Webkit browsers (Chrome, Safari) */
+ .scrol::-webkit-scrollbar {
+    width: 0px; /* Change the width as needed */
+}
+
 
 @media (min-width: 400px) {
     .kykMDA {
