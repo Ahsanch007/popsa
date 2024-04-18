@@ -693,6 +693,11 @@ body {
     display: none;
 }
 
+.show-mob{
+    display: none;
+}
+
+
 @media (min-width: 400px) {
     .kykMDA {
         flex: 1 1 0%;
@@ -784,7 +789,20 @@ body {
     display: flex;
     justify-content: center;
 }
-
+.footer-list{
+    padding: 10px 0px;
+    margin: 0;
+}
+.row-reverse{
+    flex-direction: column-reverse;
+}
+.hidden-mob{
+    display: none;
+}
+.show-mob{
+    display: block;
+    margin-top: 10px;
+}
 }
 @media(max-width:550px){
     .row{
